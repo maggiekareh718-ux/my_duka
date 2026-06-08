@@ -14,6 +14,7 @@ SELECT DATE(sales.created_at) AS sale_date, SUM((products.selling_price - produc
 -> profit_per_product
 
 SELECT name, SUM((products.selling_price - products.buying_price) * sales.quantity) AS profit_per_product FROM sales JOIN products ON sales.pid = products.id GROUP BY name;
+<<<<<<< HEAD
 
 
 class :Student
@@ -25,3 +26,5 @@ Class :Car
 Identity :Car
 State :Engine,Doors,Accelerator,Battery,Lights
 Behaviour :Overspeed,Races,Colour,Brand
+=======
+>>>>>>> 92e6a498298cd463ee6e174971b48535d9b0ba85
