@@ -9,7 +9,7 @@ class BankAccount:
 
     def deposit(self,amount):
         if self.closed:
-            print("Account is closed.  It Cannot deposit.")
+            print("Account closed.  It Cannot deposit.")
             return
 
         self.balance+=amount
